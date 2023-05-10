@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/letstryonline/static/css/main.7c69e3de.css",
+    "main.js": "/letstryonline/static/js/main.43363f88.js",
+    "index.html": "/letstryonline/index.html",
+    "main.7c69e3de.css.map": "/letstryonline/static/css/main.7c69e3de.css.map",
+    "main.43363f88.js.map": "/letstryonline/static/js/main.43363f88.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c69e3de.css",
+    "static/js/main.43363f88.js"
+  ]
+}
