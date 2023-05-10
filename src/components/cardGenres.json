@@ -1,0 +1,345 @@
+{
+    "fruits": [
+      {
+        "id": 1,
+        "name": "apple",
+        "imgUrl": "fruits/apple.jpg"
+      },
+      {
+        "id": 2,
+        "name": "banana",
+        "imgUrl": "fruits/banana.png"
+      },
+      {
+        "id": 3,
+        "name": "orange",
+        "imgUrl": "fruits/orange.png"
+      },
+      {
+        "id": 4,
+        "name": "peach",
+        "imgUrl": "fruits/peach.jpg"
+      },
+      {
+        "id": 5,
+        "name": "grapes",
+        "imgUrl": "fruits/grapes.jpg"
+      }
+    ],
+    "小3-1 国": [
+      {
+        "id": 1,
+        "name": "Finland",
+        "imgUrl": "31/finland.jpg"
+      },
+      {
+        "id": 2,
+        "name": "China",
+        "imgUrl": "31/china.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Japan",
+        "imgUrl": "31/japan.jpg"
+      },
+      {
+        "id": 4,
+        "name": "America",
+        "imgUrl": "31/america.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Germany",
+        "imgUrl": "31/germany.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Kenya",
+        "imgUrl": "31/kenya.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Australia",
+        "imgUrl": "31/Australia.jpg"
+      },
+      {
+        "id": 8,
+        "name": "India",
+        "imgUrl": "31/india.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Korea",
+        "imgUrl": "31/korea.jpg"
+      }
+    ],
+    "小3-2 気持ち": [
+      {
+        "id": 1,
+        "name": "happy",
+        "imgUrl": "32/happy.jpg"
+      },
+      {
+        "id": 2,
+        "name": "sleepy",
+        "imgUrl": "32/sleepy.jpg"
+      },
+      {
+        "id": 3,
+        "name": "hungry",
+        "imgUrl": "32/hungry.jpg"
+      },
+      {
+        "id": 4,
+        "name": "tired",
+        "imgUrl": "32/tired.jpg"
+      },
+      {
+        "id": 5,
+        "name": "sad",
+        "imgUrl": "32/sad.jpg"
+      }
+    ],
+    "小3-3 数": [
+      {
+        "id": 1,
+        "name": "1",
+        "imgUrl": "33/1.jpg"
+      },
+      {
+        "id": 2,
+        "name": "2",
+        "imgUrl": "33/2.jpg"
+      },
+      {
+        "id": 3,
+        "name": "3",
+        "imgUrl": "33/3.jpg"
+      },
+      {
+        "id": 4,
+        "name": "4",
+        "imgUrl": "33/4.jpg"
+      },
+      {
+        "id": 5,
+        "name": "5",
+        "imgUrl": "33/5.jpg"
+      },
+      {
+        "id": 6,
+        "name": "6",
+        "imgUrl": "33/6.jpg"
+      },
+      {
+        "id": 7,
+        "name": "7",
+        "imgUrl": "33/7.jpg"
+      },
+      {
+        "id": 8,
+        "name": "8",
+        "imgUrl": "33/8.jpg"
+      },
+      {
+        "id": 9,
+        "name": "9",
+        "imgUrl": "33/9.jpg"
+      },
+      {
+        "id": 10,
+        "name": "10",
+        "imgUrl": "33/10.jpg"
+      },
+      {
+        "id": 11,
+        "name": "11",
+        "imgUrl": "33/11.jpg"
+      },
+      {
+        "id": 12,
+        "name": "12",
+        "imgUrl": "33/12.jpg"
+      },
+      {
+        "id": 13,
+        "name": "13",
+        "imgUrl": "33/13.jpg"
+      },
+      {
+        "id": 14,
+        "name": "14",
+        "imgUrl": "33/14.jpg"
+      },
+      {
+        "id": 15,
+        "name": "15",
+        "imgUrl": "33/15.jpg"
+      },
+      {
+        "id": 16,
+        "name": "16",
+        "imgUrl": "33/16.jpg"
+      },
+      {
+        "id": 17,
+        "name": "17",
+        "imgUrl": "33/17.jpg"
+      },
+      {
+        "id": 18,
+        "name": "18",
+        "imgUrl": "33/18.jpg"
+      },
+      {
+        "id": 19,
+        "name": "19",
+        "imgUrl": "33/19.jpg"
+      },
+      {
+        "id": 20,
+        "name": "20",
+        "imgUrl": "33/20.jpg"
+      }
+    ],
+    "小4-1 国": [
+      {
+        "id": 1,
+        "name": "Indonesia",
+        "imgUrl": "41/indonesia.jpg"
+      },
+      {
+        "id": 2,
+        "name": "China",
+        "imgUrl": "41/china.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Japan",
+        "imgUrl": "41/japan.jpg"
+      },
+      {
+        "id": 4,
+        "name": "America",
+        "imgUrl": "41/america.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Brazil",
+        "imgUrl": "41/brazil.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Kenya",
+        "imgUrl": "41/kenya.jpg"
+      },
+      {
+        "id": 7,
+        "name": "New Zealand",
+        "imgUrl": "41/newzealand.jpg"
+      },
+      {
+        "id": 8,
+        "name": "India",
+        "imgUrl": "41/india.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Korea",
+        "imgUrl": "41/korea.jpg"
+      }
+      ,
+      {
+        "id": 10,
+        "name": "Russia",
+        "imgUrl": "41/russia.jpg"
+      },
+      {
+        "id": 11,
+        "name": "Saudi Arabia",
+        "imgUrl": "41/saudiarabia.jpg"
+      }
+    ],
+    "小4-2 服・天気": [
+      {
+        "id": 1,
+        "name": "sunny",
+        "imgUrl": "/42/sunny.jpg"
+      },
+      {
+        "id": 2,
+        "name": "rainy",
+        "imgUrl": "/42/rainy.jpg"
+      },
+      {
+        "id": 3,
+        "name": "snowy",
+        "imgUrl": "/42/snowy.jpg"
+      },
+      {
+        "id": 4,
+        "name": "cloudy",
+        "imgUrl": "/42/cloudy.jpg"
+      },
+      {
+        "id": 5,
+        "name": "hot",
+        "imgUrl": "/42/hot.jpg"
+      },
+      {
+        "id": 6,
+        "name": "cold",
+        "imgUrl": "/42/cold.jpg"
+      },
+      {
+        "id": 7,
+        "name": "shorts",
+        "imgUrl": "/42/shorts.jpg"
+      },
+      {
+        "id": 8,
+        "name": "shirt",
+        "imgUrl": "/42/shirt.jpg"
+      },
+      {
+        "id": 9,
+        "name": "pants",
+        "imgUrl": "/42/pants.jpg"
+      },
+      {
+        "id": 11,
+        "name": "jacket",
+        "imgUrl": "/42/jacket.jpg"
+      },
+      {
+        "id": 12,
+        "name": "boots",
+        "imgUrl": "/42/boots.jpg"
+      },
+      {
+        "id": 13,
+        "name": "cap",
+        "imgUrl": "/42/cap.jpg"
+      },
+      {
+        "id": 14,
+        "name": "play tag",
+        "imgUrl": "/42/playtag.jpg"
+      },
+      {
+        "id": 15,
+        "name": "play cards",
+        "imgUrl": "/42/playcards.jpg"
+      },
+      {
+        "id": 16,
+        "name": "play dodgeball",
+        "imgUrl": "/42/playdodgeball.jpg"
+      },
+      {
+        "id": 17,
+        "name": "make a snowman",
+        "imgUrl": "/42/makeasnowman.jpg"
+      }
+    ]
+  }
