@@ -30,9 +30,9 @@ function App() {
         <>
           <div className='links'>
             <ul>
-              <li><Link to="/flashcards">Flashcards <FontAwesomeIcon icon="bolt" /></Link></li>
-              <li><Link to="/concentration">Concentration <FontAwesomeIcon icon="bomb" /></Link></li>
-              <li><Link to="/missing">Missing <FontAwesomeIcon icon="eye" /></Link></li>
+              <li><Link to="/letstryonline/flashcards">Flashcards <FontAwesomeIcon icon="bolt" /></Link></li>
+              <li><Link to="/letstryonline/concentration">Concentration <FontAwesomeIcon icon="bomb" /></Link></li>
+              <li><Link to="/letstryonline/missing">Missing <FontAwesomeIcon icon="eye" /></Link></li>
               {/*<li><Link to="test">Test</Link></li>*/}
               <select id="genre-select" value={selectedGenre} onChange={handleGenreChange}>
                 {Object.keys(cardGenres).map((option) => (
