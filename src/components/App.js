@@ -30,9 +30,9 @@ function App() {
         <>
           <div className='links'>
             <ul>
-              <li><Link to="/letstryonline/flashcards">Flashcards <FontAwesomeIcon icon="bolt" /></Link></li>
-              <li><Link to="/letstryonline/concentration">Concentration <FontAwesomeIcon icon="bomb" /></Link></li>
-              <li><Link to="/letstryonline/missing">Missing <FontAwesomeIcon icon="eye" /></Link></li>
+              <li><Link to="/flashcards">Flashcards <FontAwesomeIcon icon="bolt" /></Link></li>
+              <li><Link to="/concentration">Concentration <FontAwesomeIcon icon="bomb" /></Link></li>
+              <li><Link to="/missing">Missing <FontAwesomeIcon icon="eye" /></Link></li>
               {/*<li><Link to="test">Test</Link></li>*/}
               <select id="genre-select" value={selectedGenre} onChange={handleGenreChange}>
                 {Object.keys(cardGenres).map((option) => (
@@ -44,9 +44,9 @@ function App() {
             </ul>
           </div>
           <Routes>
-            <Route path="/letstryonline/flashcards" element={<Flashcards genre={selectedGenre} currentIndex={currentIndex} />} />
-            <Route path="/letstryonline/concentration" element={<ConcentrationGame genre={selectedGenre} />} />
-            <Route path="/letstryonline/missing" element={<MissingGame genre={selectedGenre} />} />
+            <Route path="/flashcards" element={<Flashcards genre={selectedGenre} currentIndex={currentIndex} />} />
+            <Route path="/concentration" element={<ConcentrationGame genre={selectedGenre} />} />
+            <Route path="/missing" element={<MissingGame genre={selectedGenre} />} />
             {/*<Route path="/test" element={<Test />} />*/}
           </Routes>
         </>
