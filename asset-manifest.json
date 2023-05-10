@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/letstryonline/static/css/main.7c69e3de.css",
-    "main.js": "/letstryonline/static/js/main.2ace73af.js",
+    "main.js": "/letstryonline/static/js/main.71098afd.js",
     "index.html": "/letstryonline/index.html",
     "main.7c69e3de.css.map": "/letstryonline/static/css/main.7c69e3de.css.map",
-    "main.2ace73af.js.map": "/letstryonline/static/js/main.2ace73af.js.map"
+    "main.71098afd.js.map": "/letstryonline/static/js/main.71098afd.js.map"
   },
   "entrypoints": [
     "static/css/main.7c69e3de.css",
-    "static/js/main.2ace73af.js"
+    "static/js/main.71098afd.js"
   ]
 }
