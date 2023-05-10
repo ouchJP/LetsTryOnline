@@ -47,6 +47,8 @@ function App() {
             <Route path="/flashcards" element={<Flashcards genre={selectedGenre} currentIndex={currentIndex} />} />
             <Route path="/concentration" element={<ConcentrationGame genre={selectedGenre} />} />
             <Route path="/missing" element={<MissingGame genre={selectedGenre} />} />
+            <Route path="*" element={<Flashcards genre={selectedGenre} currentIndex={currentIndex} />} />
+
             {/*<Route path="/test" element={<Test />} />*/}
           </Routes>
         </>
