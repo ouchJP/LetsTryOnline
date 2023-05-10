@@ -5,7 +5,7 @@ import MissingGame from './MissingGame';
 import Flashcards from './Flashcards';
 import cardGenres from './cardGenres.json';
 //import Test from './Test.js';
-import { HashRouter, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faScroll, faBolt, faEye, faBrain, faBomb} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -26,13 +26,13 @@ function App() {
 
   return (
     <div className="wrapper">
-      <HashRouter>
+      <Router>
         <>
           <div className='links'>
             <ul>
-              <li><Link to="/flashcards">Flashcards <FontAwesomeIcon icon="bolt" /></Link></li>
-              <li><Link to="/concentration">Concentration <FontAwesomeIcon icon="bomb" /></Link></li>
-              <li><Link to="/missing">Missing <FontAwesomeIcon icon="eye" /></Link></li>
+              <li><Link to="/letstryonline/flashcards">Flashcards <FontAwesomeIcon icon="bolt" /></Link></li>
+              <li><Link to="/letstryonline/concentration">Concentration <FontAwesomeIcon icon="bomb" /></Link></li>
+              <li><Link to="/letstryonline/missing">Missing <FontAwesomeIcon icon="eye" /></Link></li>
               {/*<li><Link to="test">Test</Link></li>*/}
               <select id="genre-select" value={selectedGenre} onChange={handleGenreChange}>
                 {Object.keys(cardGenres).map((option) => (
@@ -44,13 +44,13 @@ function App() {
             </ul>
           </div>
           <Routes>
-            <Route path="/flashcards" element={<Flashcards genre={selectedGenre} currentIndex={currentIndex} />} />
-            <Route path="/concentration" element={<ConcentrationGame genre={selectedGenre} />} />
-            <Route path="/missing" element={<MissingGame genre={selectedGenre} />} />
+            <Route path="/letstryonline/flashcards" element={<Flashcards genre={selectedGenre} currentIndex={currentIndex} />} />
+            <Route path="/letstryonline/concentration" element={<ConcentrationGame genre={selectedGenre} />} />
+            <Route path="/letstryonline/missing" element={<MissingGame genre={selectedGenre} />} />
             {/*<Route path="/test" element={<Test />} />*/}
           </Routes>
         </>
-      </HashRouter>
+      </Router>
     </div>
   );
 }
