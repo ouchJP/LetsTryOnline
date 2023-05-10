@@ -9,7 +9,7 @@ const Card = ({ id, name, imgUrl, isFlipped, isMatched, onClick }) => (
     <div className="card-back"></div>
     <div className="card-front">
     
-      {<img className="card-front-image" src={process.env.PUBLIC_URL + imgUrl} alt={name} />}
+      {<img className="card-front-image" src={"./letstryonline#/" + process.env.PUBLIC_URL + imgUrl} alt={name} />}
       <div class="card-front-text">{name}</div>
     </div>
   </div>
