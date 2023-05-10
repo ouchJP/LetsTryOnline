@@ -46,7 +46,7 @@ function Flashcards({ genre }) {
         {currentCard && (
           <>
             <h2>{currentCard.name}</h2>
-            <img className="flashcard" src={process.env.PUBLIC_URL + currentCard.imgUrl} alt={currentCard.name} />
+            <img className="flashcard" src={currentCard.imgUrl} alt={currentCard.name} />
           </>
         )}
       </div>
