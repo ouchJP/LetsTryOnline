@@ -117,6 +117,11 @@ img {
   cursor: default;
 }
 
+.card.wrong {
+  visibility: hidden; 
+  cursor: default;
+}
+
 .reset-button {
   margin-top: 1rem;
 }

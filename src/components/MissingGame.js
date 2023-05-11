@@ -1,21 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Card from './ConcentrationCard';
 import cardGenres from './cardGenres.json';
 
-const MissingGame = ({genre}) => {
+const MissingGame = ({ genre }) => {
   const [hiddenCards, setHiddenCards] = useState(1);
   const [cards, setCards] = useState([]);
-  //const [selectedGenre, setSelectedGenre] = useState('fruits');
   const [totalCards, setTotalCards] = useState(5);
   const [gameStarted, setGameStarted] = useState(false);
 
   const selectedCards = cardGenres[genre];
-
-  //const handleGenreChange = (event) => {
-  //  setSelectedGenre(event.target.value);
-  //  setCards([]);
- // };
-
 
   const handleHiddenCardsChange = (event) => {
     setHiddenCards(event.target.value);
@@ -41,6 +34,10 @@ const MissingGame = ({genre}) => {
       setGameStarted(true);
     }
   };
+
+  useEffect(() => {
+    generateCards();
+  }, [genre]);
 
   const hideCards = () => {
     if (cards.length >= totalCards) {
@@ -80,14 +77,6 @@ const MissingGame = ({genre}) => {
   return (
     <div>
       <h1>Missing Game</h1>
-      {/*<label htmlFor="genre-select">{genre}</label>
-      <select id="genre-select" value={selectedGenre} onChange={handleGenreChange}>
-        {Object.keys(cardGenres).map((option) => (
-          <option key={option} value={option}>
-            {option}
-          </option>
-        ))}
-        </select>*/}
       <br />
       <label htmlFor="total-cards-select">Number of cards:</label>
       <select id="total-cards-select" value={totalCards} onChange={handleTotalCards}>

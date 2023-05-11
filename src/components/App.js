@@ -3,6 +3,7 @@ import './App.css';
 import ConcentrationGame from './ConcentrationGame';
 import MissingGame from './MissingGame';
 import Flashcards from './Flashcards';
+import WhichPic from './WhichPic';
 import cardGenres from './cardGenres.json';
 //import Test from './Test.js';
 import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
@@ -33,6 +34,7 @@ function App() {
               <li><Link to="/flashcards">Flashcards <FontAwesomeIcon icon="bolt" /></Link></li>
               <li><Link to="/concentration">Concentration <FontAwesomeIcon icon="bomb" /></Link></li>
               <li><Link to="/missing">Missing <FontAwesomeIcon icon="eye" /></Link></li>
+              <li><Link to="/whichpic">Which Pic? <FontAwesomeIcon icon="eye" /></Link></li>
               {/*<li><Link to="test">Test</Link></li>*/}
               <select id="genre-select" value={selectedGenre} onChange={handleGenreChange}>
                 {Object.keys(cardGenres).map((option) => (
@@ -47,6 +49,7 @@ function App() {
             <Route path="/flashcards" element={<Flashcards genre={selectedGenre} currentIndex={currentIndex} />} />
             <Route path="/concentration" element={<ConcentrationGame genre={selectedGenre} />} />
             <Route path="/missing" element={<MissingGame genre={selectedGenre} />} />
+            <Route path="/whichpic" element={<WhichPic genre={selectedGenre} />} />
             <Route path="*" element={<Flashcards genre={selectedGenre} currentIndex={currentIndex} />} />
 
             {/*<Route path="/test" element={<Test />} />*/}

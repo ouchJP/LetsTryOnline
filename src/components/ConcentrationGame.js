@@ -1,15 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Card from './ConcentrationCard';
 import cardGenres from './cardGenres.json';
 
-const ConcentrationGame = ({genre}) => {
-  //const [selectedGenre, setSelectedGenre] = useState('fruits');
+const ConcentrationGame = ({ genre }) => {
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
-
-  //const handleGenreChange = (event) => {
-  //  setSelectedGenre(event.target.value);
-  //};
 
   const handleCardClick = (id) => {
     const newCards = [...cards];
@@ -48,7 +43,7 @@ const ConcentrationGame = ({genre}) => {
     const selectedCards = cardGenres[genre];
     const shuffledCards = selectedCards.sort(() => Math.random() - 0.5);
     const chosenCards = shuffledCards.slice(0, 6);
-  
+
     const cardPairs = chosenCards.concat(chosenCards).sort(() => Math.random() - 0.5);
 
     setCards(
@@ -62,6 +57,10 @@ const ConcentrationGame = ({genre}) => {
     );
     setFlippedCards([]);
   };
+
+  useEffect(() => {
+    generateCards();
+  }, [genre]);
 
   return (
     <div>
