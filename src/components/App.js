@@ -6,7 +6,7 @@ import Flashcards from './Flashcards';
 import WhichPic from './WhichPic';
 import cardGenres from './cardGenres.json';
 //import Test from './Test.js';
-import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Link, Route, Routes, Navigate } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faScroll, faBolt, faEye, faBrain, faBomb} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -50,7 +50,7 @@ function App() {
             <Route path="/concentration" element={<ConcentrationGame genre={selectedGenre} />} />
             <Route path="/missing" element={<MissingGame genre={selectedGenre} />} />
             <Route path="/whichpic" element={<WhichPic genre={selectedGenre} />} />
-            <Route path="*" element={<Flashcards genre={selectedGenre} currentIndex={currentIndex} />} />
+            <Route path="*" element={<Navigate to="/" />} />
 
             {/*<Route path="/test" element={<Test />} />*/}
           </Routes>
