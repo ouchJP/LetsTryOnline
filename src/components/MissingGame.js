@@ -41,6 +41,18 @@ const MissingGame = ({ genre }) => {
 
   const hideCards = () => {
     if (cards.length >= totalCards) {
+      //Fisher-Yates shuffle algorithm courtesy of stackoverflow
+      let currentIndex = cards.length, randomIndex;
+      // While there remain elements to shuffle.
+      while (currentIndex !== 0) {
+        // Pick a remaining element.
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+        // And swap it with the current element.
+        [cards[currentIndex], cards[randomIndex]] = [
+          cards[randomIndex], cards[currentIndex]];
+      }
+
       const flippedCardIndices = [];
       while (flippedCardIndices.length < hiddenCards) {
         const randomIndex = Math.floor(Math.random() * totalCards);

@@ -50,15 +50,19 @@ function WhichPic({ genre }) {
         }
     };
 
+    const handleTotalCards = (event) => {
+        setTotalCards(event.target.value);
+      };
+
 
     const getRandomCard = () => {
         if (cards.length > 0) {
             let rIndex = Math.floor(Math.random() * cards.length);
-            
+
             while (rIndex === randomIndex) {
                 rIndex = Math.floor(Math.random() * cards.length);
             }
-            
+
             setRandomCard(cards[rIndex].name);
             setRandomIndex(rIndex);
         }
@@ -66,6 +70,15 @@ function WhichPic({ genre }) {
     return (
         <div>
             <h1>Which Pic?</h1>
+            <label htmlFor="total-cards-select">Number of cards:</label>
+            <select id="total-cards-select" value={totalCards} onChange={handleTotalCards}>
+                {Array.from({ length: selectedCards.length + 1 }, (_, option) => (
+                    <option key={option} value={option}>
+                        {option}
+                    </option>
+                ))}
+            </select>
+            <button onClick={generateCards}>New Cards</button>
             <br />
             {gameStarted && <>
                 <button onClick={generateCards}>New Cards</button></ >}

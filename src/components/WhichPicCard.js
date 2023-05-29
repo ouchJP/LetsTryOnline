@@ -8,7 +8,7 @@ const WhichPicCard = ({ id, name, imgUrl, isWrong, onClick }) => (
   >
     <div className="card-back"></div>
     <div className="card-front">
-    
+      {<span>{id+1}</span>}
       {<img className="card-front-image" src={imgUrl} alt={name} />}
     </div>
   </div>

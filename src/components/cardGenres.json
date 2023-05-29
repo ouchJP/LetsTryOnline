@@ -26,6 +26,53 @@
         "imgUrl": "fruits/grapes.jpg"
       }
     ],
+    "animals": [
+      {
+        "id": 1,
+        "name": "cat",
+        "imgUrl": "animals/cat.jpg"
+      },
+      {
+        "id": 2,
+        "name": "rabbit",
+        "imgUrl": "animals/rabbit.jpg"
+      },
+      {
+        "id": 3,
+        "name": "mouse",
+        "imgUrl": "animals/mouse.jpg"
+      },
+      {
+        "id": 4,
+        "name": "giraffe",
+        "imgUrl": "animals/giraffe.jpg"
+      },
+      {
+        "id": 5,
+        "name": "crocodile",
+        "imgUrl": "animals/crocodile.jpg"
+      },
+      {
+        "id": 6,
+        "name": "monkey",
+        "imgUrl": "animals/monkey.jpg"
+      },
+      {
+        "id": 7,
+        "name": "bird",
+        "imgUrl": "animals/bird.jpg"
+      },
+      {
+        "id": 8,
+        "name": "snake",
+        "imgUrl": "animals/snake.jpg"
+      },
+      {
+        "id": 9,
+        "name": "cow",
+        "imgUrl": "animals/cow.jpg"
+      }
+    ],
     "小3-1 国": [
       {
         "id": 1,
@@ -202,6 +249,58 @@
         "imgUrl": "33/20.jpg"
       }
     ],
+    "小3-4 色": [
+      {
+        "id": 1,
+        "name": "red",
+        "imgUrl": "34/red.jpg"
+      },
+      {
+        "id": 2,
+        "name": "yellow",
+        "imgUrl": "34/yellow.jpg"
+      },
+      {
+        "id": 3,
+        "name": "blue",
+        "imgUrl": "34/blue.jpg"
+      },
+      {
+        "id": 4,
+        "name": "green",
+        "imgUrl": "34/green.jpg"
+      },
+      {
+        "id": 5,
+        "name": "purple",
+        "imgUrl": "34/purple.jpg"
+      },
+      {
+        "id": 6,
+        "name": "orange",
+        "imgUrl": "34/orange.jpg"
+      },
+      {
+        "id": 7,
+        "name": "pink",
+        "imgUrl": "34/pink.jpg"
+      },
+      {
+        "id": 8,
+        "name": "brown",
+        "imgUrl": "34/brown.jpg"
+      },
+      {
+        "id": 9,
+        "name": "white",
+        "imgUrl": "34/white.jpg"
+      },
+      {
+        "id": 10,
+        "name": "black",
+        "imgUrl": "34/black.jpg"
+      }
+    ],
     "小4-1 国": [
       {
         "id": 1,
@@ -340,6 +439,43 @@
         "id": 17,
         "name": "make a snowman",
         "imgUrl": "/42/makeasnowman.jpg"
+      }
+    ],
+    "小4-3 曜日": [
+      {
+        "id": 1,
+        "name": "monday",
+        "imgUrl": "/43/monday.jpg"
+      },
+      {
+        "id": 2,
+        "name": "tuesday",
+        "imgUrl": "/43/tuesday.jpg"
+      },
+      {
+        "id": 3,
+        "name": "wednesday",
+        "imgUrl": "/43/wednesday.jpg"
+      },
+      {
+        "id": 4,
+        "name": "thursday",
+        "imgUrl": "/43/thursday.jpg"
+      },
+      {
+        "id": 5,
+        "name": "friday",
+        "imgUrl": "/43/friday.jpg"
+      },
+      {
+        "id": 6,
+        "name": "saturday",
+        "imgUrl": "/43/saturday.jpg"
+      },
+      {
+        "id": 7,
+        "name": "sunday",
+        "imgUrl": "/43/sunday.jpg"
       }
     ]
   }
