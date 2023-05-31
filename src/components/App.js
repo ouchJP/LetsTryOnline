@@ -5,7 +5,7 @@ import MissingGame from './MissingGame';
 import Flashcards from './Flashcards';
 import WhichPic from './WhichPic';
 import cardGenres from './cardGenres.json';
-import { BrowserRouter as Router, Link, Route, Routes, Navigate } from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes} from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faScroll, faBolt, faEye, faBrain, faBomb } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className="wrapper">
-      <Router>
+      <BrowserRouter>
         <>
           <div className='links'>
             <ul>
@@ -39,7 +39,6 @@ function App() {
               <li><Link to="/concentration">Concentration <FontAwesomeIcon icon="bomb" /></Link></li>
               <li><Link to="/missing">Missing <FontAwesomeIcon icon="eye" /></Link></li>
               <li><Link to="/whichpic">Which Pic? <FontAwesomeIcon icon="eye" /></Link></li>
-              {/*<li><Link to="test">Test</Link></li>*/}
               <select id="genre-select" value={selectedGenre} onChange={handleGenreChange}>
                 {Object.keys(cardGenres).map((option) => (
                   <option key={option} value={option}>
@@ -50,14 +49,14 @@ function App() {
             </ul>
           </div>
           <Routes>
-            <Route path="/flashcards" exact element={<Flashcards genre={selectedGenre} currentIndex={currentIndex} />} />
-            <Route path="/concentration" exact element={<ConcentrationGame genre={selectedGenre} />} />
-            <Route path="/missing" exact element={<MissingGame genre={selectedGenre} />} />
-            <Route path="/whichpic" exact element={<WhichPic genre={selectedGenre} />} />
-            <Route path="*" element={<Navigate to="/flashcards" />} />
+            <Route path="/flashcards" element={<Flashcards genre={selectedGenre} currentIndex={currentIndex} />} />
+            <Route path="/concentration" element={<ConcentrationGame genre={selectedGenre} />} />
+            <Route path="/missing" element={<MissingGame genre={selectedGenre} />} />
+            <Route path="/whichpic" element={<WhichPic genre={selectedGenre} />} />
+            <Route path="*" element={<Flashcards genre={selectedGenre} currentIndex={currentIndex} />} />
           </Routes>
         </>
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }
