@@ -4,4 +4,4 @@ A react based webpage for flashcards and games for the Japanese educational text
 
 ## Available online for free.
 
-Open [joshenglish.jp](joshenglish.jp) to view it in your browser.
+Open [joshenglish.jp](https://joshenglish.jp) to view it in your browser.
