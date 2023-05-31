@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className="wrapper">
-      <BrowserRouter>
+      <BrowserRouter basename="/">
         <>
           <div className='links'>
             <ul>
