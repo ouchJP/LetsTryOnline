@@ -5,20 +5,24 @@ import MissingGame from './MissingGame';
 import Flashcards from './Flashcards';
 import WhichPic from './WhichPic';
 import cardGenres from './cardGenres.json';
-//import Test from './Test.js';
 import { BrowserRouter as Router, Link, Route, Routes, Navigate } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faScroll, faBolt, faEye, faBrain, faBomb} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faScroll, faBolt, faEye, faBrain, faBomb } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 library.add(faBrain, faScroll, faBomb, faBolt, faEye);
 
 function App() {
-  const [selectedGenre, setSelectedGenre] = useState('fruits');
+  const [selectedGenre, setSelectedGenre] = useState(() => {
+    const cachedGenre = localStorage.getItem('selectedGenre');
+    return cachedGenre ? cachedGenre : 'fruits';
+  });
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     setCurrentIndex(0);
+    localStorage.setItem('selectedGenre', selectedGenre);
   }, [selectedGenre]);
 
   const handleGenreChange = (event) => {
@@ -46,13 +50,11 @@ function App() {
             </ul>
           </div>
           <Routes>
-            <Route path="/flashcards" element={<Flashcards genre={selectedGenre} currentIndex={currentIndex} />} />
-            <Route path="/concentration" element={<ConcentrationGame genre={selectedGenre} />} />
-            <Route path="/missing" element={<MissingGame genre={selectedGenre} />} />
-            <Route path="/whichpic" element={<WhichPic genre={selectedGenre} />} />
-            <Route path="*" element={<Navigate to="/" />} />
-
-            {/*<Route path="/test" element={<Test />} />*/}
+            <Route path="/flashcards" exact element={<Flashcards genre={selectedGenre} currentIndex={currentIndex} />} />
+            <Route path="/concentration" exact element={<ConcentrationGame genre={selectedGenre} />} />
+            <Route path="/missing" exact element={<MissingGame genre={selectedGenre} />} />
+            <Route path="/whichpic" exact element={<WhichPic genre={selectedGenre} />} />
+            <Route path="*" element={<Navigate to="/flashcards" />} />
           </Routes>
         </>
       </Router>
