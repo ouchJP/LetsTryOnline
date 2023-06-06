@@ -4,6 +4,7 @@ import ConcentrationGame from './ConcentrationGame';
 import MissingGame from './MissingGame';
 import Flashcards from './Flashcards';
 import WhichPic from './WhichPic';
+import Typing from './Typing';
 import cardGenres from './cardGenres.json';
 import { BrowserRouter, Link, Route, Routes} from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
