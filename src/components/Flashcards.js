@@ -6,6 +6,7 @@ import './App.css';
 function Flashcards({ genre }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isGenreChanging, setIsGenreChanging] = useState(false); // new state variable
+  const [previousIndex, setPreviousIndex] = useState(null);
 
   useEffect(() => {
     setIsGenreChanging(true); // indicate that genre change is in progress
@@ -23,8 +24,13 @@ function Flashcards({ genre }) {
   };
 
   const handleRandomClick = () => {
-    var randomIndex =  Math.floor(Math.random() * CardGenres[genre].length);
+    let randomIndex;
+    do {
+      randomIndex =  Math.floor(Math.random() * CardGenres[genre].length);
+    } while (randomIndex === previousIndex);
+
     setCurrentIndex(randomIndex);
+    setPreviousIndex(randomIndex);
   };
 
   const handlePrevClick = () => {

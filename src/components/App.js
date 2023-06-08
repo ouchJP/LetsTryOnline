@@ -40,6 +40,7 @@ function App() {
               <li><Link to="/concentration">Concentration <FontAwesomeIcon icon="bomb" /></Link></li>
               <li><Link to="/missing">Missing <FontAwesomeIcon icon="eye" /></Link></li>
               <li><Link to="/whichpic">Which Pic? <FontAwesomeIcon icon="eye" /></Link></li>
+              <li><Link to="/typing">Typing <FontAwesomeIcon icon="eye" /></Link></li>
               <select id="genre-select" value={selectedGenre} onChange={handleGenreChange}>
                 {Object.keys(cardGenres).map((option) => (
                   <option key={option} value={option}>
@@ -54,6 +55,7 @@ function App() {
             <Route path="/concentration" element={<ConcentrationGame genre={selectedGenre} />} />
             <Route path="/missing" element={<MissingGame genre={selectedGenre} />} />
             <Route path="/whichpic" element={<WhichPic genre={selectedGenre} />} />
+            <Route path="/typing" element={<Typing genre={selectedGenre} />} />
             <Route path="*" element={<Flashcards genre={selectedGenre} currentIndex={currentIndex} />} />
           </Routes>
         </>

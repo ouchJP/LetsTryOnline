@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import cardGenres from './cardGenres.json';
 import WhichPicCard from './WhichPicCard';
 
+//BUGS: Same random card can be selected twice in a row.
+
 function WhichPic({ genre }) {
 
     const [cards, setCards] = useState([]);
@@ -9,6 +11,7 @@ function WhichPic({ genre }) {
     const [gameStarted, setGameStarted] = useState(true);
     const [randomCard, setRandomCard] = useState("");
     const [randomIndex, setRandomIndex] = useState(0);
+    const [previousIndex, setPreviousIndex] = useState(null);
 
     const selectedCards = cardGenres[genre];
 
@@ -52,19 +55,19 @@ function WhichPic({ genre }) {
 
     const handleTotalCards = (event) => {
         setTotalCards(event.target.value);
-      };
+    };
 
 
     const getRandomCard = () => {
         if (cards.length > 0) {
-            let rIndex = Math.floor(Math.random() * cards.length);
+            let randomIndex;
+            do {
+                randomIndex = Math.floor(Math.random() * cards.length);
+            } while (randomIndex === previousIndex);
 
-            while (rIndex === randomIndex) {
-                rIndex = Math.floor(Math.random() * cards.length);
-            }
-
-            setRandomCard(cards[rIndex].name);
-            setRandomIndex(rIndex);
+            setRandomIndex(randomIndex);
+            setPreviousIndex(randomIndex);
+            setRandomCard(cards[randomIndex].name);
         }
     };
     return (

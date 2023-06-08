@@ -44,7 +44,8 @@ button {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust the width as needed */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* Adjust the width as needed */
   grid-gap: 1rem;
   margin: 2rem;
 }
@@ -52,13 +53,15 @@ button {
 .card {
   position: relative;
   width: 100%;
-  height: 30vh; /* Adjust the height as needed */
+  height: 30vh;
+  /* Adjust the height as needed */
   background-color: #eee;
   border-radius: 0.25rem;
   cursor: pointer;
   transition: transform 0.5s ease;
   transform-style: preserve-3d;
 }
+
 
 img {
   max-width: 100%;
@@ -118,7 +121,7 @@ img {
 }
 
 .card.wrong {
-  visibility: hidden; 
+  visibility: hidden;
   cursor: default;
 }
 
@@ -126,3 +129,55 @@ img {
   margin-top: 1rem;
 }
 
+.typingCard {
+  height: 5rem;
+}
+
+.typingInput {
+  height: 5rem;
+  text-align: center;
+  border-radius: 0.25rem;
+  border: none;
+}
+
+.typingButton {
+  border-radius: 0.25rem;
+}
+
+.typingcard {
+  position: relative;
+  width: 50%;
+  height: 30vh;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  transform-style: preserve-3d;
+}
+
+
+
+.typingcard-front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 0.25rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.typingcard-front-image {
+  width: 50;
+  height: 75%;
+  max-height: calc(100% - 2rem);
+  border-radius: 0.25rem;
+}
