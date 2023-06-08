@@ -7,7 +7,7 @@ const TypingCard = ({ name, imgUrl }) => (
   >
     <div className="typingcard-front">
       {<img className="typingcard-front-image" src={imgUrl} alt={name} />}
-      <div class="typingcard-front-text">{name}</div>
+      <div className="typingcard-front-text">{name}</div>
     </div>
   </div>
 );
