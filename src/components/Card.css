@@ -151,7 +151,6 @@ img {
   display: flex;
   margin: 0 auto;
   border-radius: 0.25rem;
-  cursor: pointer;
   transition: transform 0.5s ease;
   transform-style: preserve-3d;
 }
@@ -180,4 +179,20 @@ img {
   height: 75%;
   max-height: calc(100% - 2rem);
   border-radius: 0.25rem;
+}
+
+.typingcorrect{
+  color: green
+}
+
+.typingfalse{
+  color: red;
+}
+
+.typinghidden{
+  color: var(--color-background);
+}
+
+.typingcheckbox{
+  cursor:pointer;
 }

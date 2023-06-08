@@ -8,10 +8,10 @@ import Typing from './Typing';
 import cardGenres from './cardGenres.json';
 import { BrowserRouter, Link, Route, Routes} from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faScroll, faBolt, faEye, faBrain, faBomb } from "@fortawesome/free-solid-svg-icons";
+import { faScroll, faBolt, faEye, faBrain, faBomb, faKeyboard, faGem } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-library.add(faBrain, faScroll, faBomb, faBolt, faEye);
+library.add(faBrain, faScroll, faBomb, faBolt, faEye, faKeyboard, faGem);
 
 function App() {
   const [selectedGenre, setSelectedGenre] = useState(() => {
@@ -39,8 +39,8 @@ function App() {
               <li><Link to="/flashcards">Flashcards <FontAwesomeIcon icon="bolt" /></Link></li>
               <li><Link to="/concentration">Concentration <FontAwesomeIcon icon="bomb" /></Link></li>
               <li><Link to="/missing">Missing <FontAwesomeIcon icon="eye" /></Link></li>
-              <li><Link to="/whichpic">Which Pic? <FontAwesomeIcon icon="eye" /></Link></li>
-              <li><Link to="/typing">Typing <FontAwesomeIcon icon="eye" /></Link></li>
+              <li><Link to="/whichpic">Which Pic? <FontAwesomeIcon icon="gem" /></Link></li>
+              <li><Link to="/typing">Typing <FontAwesomeIcon icon="keyboard" /></Link></li>
               <select id="genre-select" value={selectedGenre} onChange={handleGenreChange}>
                 {Object.keys(cardGenres).map((option) => (
                   <option key={option} value={option}>

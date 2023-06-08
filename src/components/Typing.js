@@ -13,7 +13,9 @@ const Typing = ({ genre }) => {
     const [previousIndex, setPreviousIndex] = useState(null);
     const [inputValue, setInputValue] = useState('');
     const [isMatch, setIsMatch] = useState(false);
-  
+    const [isHard, setisHard] = useState(false);
+    const [checked, setChecked] = useState(false);
+      
     const selectedCards = cardGenres[genre];
     const inputRef = useRef(null);
   
@@ -78,14 +80,17 @@ const Typing = ({ genre }) => {
         const inputLetters = inputValue.toLowerCase().split('');
   
         return nameLetters.map((letter, index) => {
-          let style = { color: 'red' };
+          let typingclassname = 'typinghidden'
+          if (!isHard){
+           typingclassname = 'typingfalse'
+          }
   
           if (inputLetters[index] === letter) {
-            style = { color: 'green' };
+            typingclassname = 'typingcorrect'
           }
   
           return (
-            <span key={index} style={style}>
+            <span key={index} className={typingclassname}>
               {currentCard.name[index]}
             </span>
           );
@@ -93,6 +98,13 @@ const Typing = ({ genre }) => {
       }
       return null;
     };
+
+    const handleChecked = () => {
+      if(!isHard){
+      setisHard(true)
+    } else {setisHard(false)}
+      setChecked(!checked);
+    }
   
     return (
       <div>
@@ -119,6 +131,10 @@ const Typing = ({ genre }) => {
           />
           <br />
         </div>
+        <label>
+        <input type="checkbox" className="typingcheckbox" checked={checked} onChange={handleChecked}/>
+        Hide text
+        </label>
       </div>
     );
   };
