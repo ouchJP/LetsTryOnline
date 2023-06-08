@@ -46,6 +46,10 @@ const Typing = ({ genre }) => {
             event.preventDefault();
             checkMatch();
         }
+        if (event.key === 'Space') {
+            event.preventDefault();
+            checkMatch();
+        }
     };
 
     const checkMatch = () => {
@@ -67,9 +71,9 @@ const Typing = ({ genre }) => {
         generateCards();
     }, [genre]);
 
-    useEffect(() => {
-        checkMatch();
-    }, [inputValue]);
+    //useEffect(() => {
+    //    checkMatch();
+    //}, [inputValue]);
 
     useEffect(() => {
         if (isMatch) {
