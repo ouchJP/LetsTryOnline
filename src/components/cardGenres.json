@@ -161,7 +161,10 @@
       { "id": 7, "name": "calender", "imgUrl": "/44/calender.jpg"},
       { "id": 8, "name": "pencil case", "imgUrl": "/44/pencilcase.jpg"},
       { "id": 9, "name": "marker", "imgUrl": "/44/marker.jpg"},
-      { "id": 10, "name": "magnet", "imgUrl": "/44/magnet.jpg"}
+      { "id": 10, "name": "magnet", "imgUrl": "/44/magnet.jpg"},
+      { "id": 11, "name": "stapler", "imgUrl": "/44/stapler.jpg"},
+      { "id": 12, "name": "glue stick", "imgUrl": "/44/gluestick.jpg"}
+      }
     ],
     "小4-6 アルファベット小文字": [
       { "id": 1, "name": "a", "imgUrl": "46/a.jpg"    } ,
