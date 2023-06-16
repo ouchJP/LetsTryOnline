@@ -164,7 +164,6 @@
       { "id": 10, "name": "magnet", "imgUrl": "/44/magnet.jpg"},
       { "id": 11, "name": "stapler", "imgUrl": "/44/stapler.jpg"},
       { "id": 12, "name": "glue stick", "imgUrl": "/44/gluestick.jpg"}
-      }
     ],
     "小4-6 アルファベット小文字": [
       { "id": 1, "name": "a", "imgUrl": "46/a.jpg"    } ,
