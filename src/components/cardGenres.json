@@ -151,6 +151,18 @@
       { "id": 7, "name": "sunday", "imgUrl": "/43/sunday.jpg"
       }
     ],
+        "小4-4 文房具": [
+      { "id": 1, "name": "pen", "imgUrl": "/44/pen.jpg"    } ,
+      { "id": 2, "name": "pencil", "imgUrl": "/44/pencil.jpg"    } ,
+      { "id": 3, "name": "eraser", "imgUrl": "/44/eraser.jpg"    } ,
+      { "id": 4, "name": "ruler", "imgUrl": "/44/ruler.jpg"    } ,
+      { "id": 5, "name": "pencil sharpener", "imgUrl": "/44/pencilsharpener.jpg"      },
+      { "id": 6, "name": "notebook", "imgUrl": "/44/notebook.jpg"   },
+      { "id": 7, "name": "calender", "imgUrl": "/44/calender.jpg"},
+      { "id": 8, "name": "pencil case", "imgUrl": "/44/pencilcase.jpg"},
+      { "id": 9, "name": "marker", "imgUrl": "/44/marker.jpg"},
+      { "id": 10, "name": "magnet", "imgUrl": "/44/magnet.jpg"}
+    ],
     "小4-6 アルファベット小文字": [
       { "id": 1, "name": "a", "imgUrl": "46/a.jpg"    } ,
       { "id": 2, "name": "b", "imgUrl": "46/b.jpg"    } ,

@@ -100,9 +100,7 @@ const Typing = ({ genre }) => {
     };
 
     const handleChecked = () => {
-      if(!isHard){
-      setisHard(true)
-    } else {setisHard(false)}
+      !isHard ? setisHard(true) : setisHard(false);
       setChecked(!checked);
     }
   
