@@ -151,7 +151,19 @@
       { "id": 7, "name": "sunday", "imgUrl": "/43/sunday.jpg"
       }
     ],
-        "小4-4 文房具": [
+    "小4-4 何時ですか": [
+      { "id": 1, "name": "bath time", "imgUrl": "/45/bathtime.png"    } ,
+      { "id": 2, "name": "bed time", "imgUrl": "/45/bedtime.png"    } ,
+      { "id": 3, "name": "breakfast time", "imgUrl": "/45/breakfasttime.png"    } ,
+      { "id": 4, "name": "dinner time", "imgUrl": "/45/dinnertime.png"    } ,
+      { "id": 5, "name": "dream time", "imgUrl": "/45/dreamtime"      },
+      { "id": 6, "name": "homework time", "imgUrl": "/45/homeworktime"   },
+      { "id": 7, "name": "lunch time", "imgUrl": "/45/lunchtime"},
+      { "id": 8, "name": "snack time", "imgUrl": "/45/snacktime"},
+      { "id": 9, "name": "study time", "imgUrl": "/45/studytime"},
+      { "id": 10, "name": "wake-up time", "imgUrl": "/45/wakeuptime"}
+    ],
+        "小4-5 文房具": [
       { "id": 1, "name": "pen", "imgUrl": "/44/pen.jpg"    } ,
       { "id": 2, "name": "pencil", "imgUrl": "/44/pencil.jpg"    } ,
       { "id": 3, "name": "eraser", "imgUrl": "/44/eraser.jpg"    } ,
