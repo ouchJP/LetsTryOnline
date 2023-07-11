@@ -152,16 +152,16 @@
       }
     ],
     "小4-4 何時ですか": [
-      { "id": 1, "name": "bath time", "imgUrl": "/45/bathtime.png"    } ,
-      { "id": 2, "name": "bed time", "imgUrl": "/45/bedtime.png"    } ,
-      { "id": 3, "name": "breakfast time", "imgUrl": "/45/breakfasttime.png"    } ,
-      { "id": 4, "name": "dinner time", "imgUrl": "/45/dinnertime.png"    } ,
-      { "id": 5, "name": "dream time", "imgUrl": "/45/dreamtime.png"      },
+      { "id": 1, "name": "wake-up time", "imgUrl": "/45/wakeuptime.png"},
+      { "id": 2, "name": "breakfast time", "imgUrl": "/45/breakfasttime.png"    } ,
+      { "id": 3, "name": "study time", "imgUrl": "/45/studytime.png"},
+      { "id": 4, "name": "lunch time", "imgUrl": "/45/lunchtime.png"},
+      { "id": 5, "name": "snack time", "imgUrl": "/45/snacktime.png"},
       { "id": 6, "name": "homework time", "imgUrl": "/45/homeworktime.png"   },
-      { "id": 7, "name": "lunch time", "imgUrl": "/45/lunchtime.png"},
-      { "id": 8, "name": "snack time", "imgUrl": "/45/snacktime.png"},
-      { "id": 9, "name": "study time", "imgUrl": "/45/studytime.png"},
-      { "id": 10, "name": "wake-up time", "imgUrl": "/45/wakeuptime.png"}
+      { "id": 7, "name": "dinner time", "imgUrl": "/45/dinnertime.png"    } ,
+      { "id": 8, "name": "bath time", "imgUrl": "/45/bathtime.png"    } ,
+      { "id": 9, "name": "bed time", "imgUrl": "/45/bedtime.png"    } ,
+      { "id": 10, "name": "dream time", "imgUrl": "/45/dreamtime.png"      }
     ],
     "小4-5 文房具": [
       { "id": 1, "name": "pen", "imgUrl": "/44/pen.jpg"    } ,
