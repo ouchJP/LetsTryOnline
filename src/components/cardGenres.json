@@ -28,6 +28,17 @@
       { "id": 8, "name": "dragonfly", "imgUrl": "insects/dragonfly.jpg"    } ,
       { "id": 9, "name": "ant", "imgUrl": "insects/ant.jpg"      }
     ],
+    "sea": [
+      { "id": 1, "name": "fish", "imgUrl": "sea/fish.jpg"    } ,
+      { "id": 2, "name": "jellyfish", "imgUrl": "sea/jellyfish.jpg"    } ,
+      { "id": 3, "name": "starfish", "imgUrl": "sea/starfish.jpg"    } ,
+      { "id": 4, "name": "crab", "imgUrl": "sea/crab.jpg"    } ,
+      { "id": 5, "name": "seahorse", "imgUrl": "sea/seahorse.jpg"    } ,
+      { "id": 6, "name": "octopus", "imgUrl": "sea/octopus.jpg"    } ,
+      { "id": 7, "name": "shark", "imgUrl": "sea/shark.jpg"    } ,
+      { "id": 8, "name": "dolphin", "imgUrl": "sea/dolphin.jpg"    } ,
+      { "id": 9, "name": "whale", "imgUrl": "sea/whale.jpg"      }
+    ],
     "小3-1 国": [
       { "id": 1, "name": "Finland", "imgUrl": "31/finland.jpg"    } ,
       { "id": 2, "name": "China", "imgUrl": "31/china.jpg"    } ,
