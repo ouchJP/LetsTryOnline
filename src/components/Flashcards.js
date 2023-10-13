@@ -1,12 +1,18 @@
 import { useState, useEffect } from 'react';
 import CardGenres from './cardGenres.json';
-
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './App.css';
+library.add(faPlay);
+
+
 
 function Flashcards({ genre }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isGenreChanging, setIsGenreChanging] = useState(false); // new state variable
   const [previousIndex, setPreviousIndex] = useState(null);
+
 
   useEffect(() => {
     setIsGenreChanging(true); // indicate that genre change is in progress
@@ -51,7 +57,7 @@ function Flashcards({ genre }) {
         <button onClick={handleNextClick}>Next</button>
         {currentCard && (
           <>
-            <h2>{currentCard.name}</h2>
+            <h2>{currentCard.name}<audio id="player"></audio><button onclick="document.getElementById('player').play()"><FontAwesomeIcon icon="play" /></button></h2>
             <img className="flashcard" src={currentCard.imgUrl} alt={currentCard.name} />
           </>
         )}
