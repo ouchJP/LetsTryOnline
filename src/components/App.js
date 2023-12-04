@@ -5,14 +5,14 @@ import MissingGame from './MissingGame';
 import Flashcards from './Flashcards';
 import WhichPic from './WhichPic';
 import Typing from './Typing';
-import Bingo from './Bingo';
+//import Bingo from './Bingo';
 import cardGenres from './cardGenres.json';
 import { BrowserRouter, Link, Route, Routes} from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faScroll, faBolt, faEye, faBrain, faBomb, faKeyboard, faGem } from "@fortawesome/free-solid-svg-icons";
+import { faScroll, faBolt, faEye, faBrain, faBomb, faKeyboard, faGem, faKey } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-library.add(faBrain, faScroll, faBomb, faBolt, faEye, faKeyboard, faGem);
+library.add(faBrain, faScroll, faBomb, faBolt, faEye, faKeyboard, faGem, faKey);
 
 function App() {
   const [selectedGenre, setSelectedGenre] = useState(() => {
@@ -42,14 +42,14 @@ function App() {
               <li><Link to="/missing">Missing <FontAwesomeIcon icon="eye" /></Link></li>
               <li><Link to="/whichpic">Which Pic? <FontAwesomeIcon icon="gem" /></Link></li>
               <li><Link to="/typing">Typing <FontAwesomeIcon icon="keyboard" /></Link></li>
-              <li><Link to="/bingo">Bingo <FontAwesomeIcon icon="keyboard" /></Link></li>
+              {/*<li><Link to="/bingo">Bingo <FontAwesomeIcon icon="keyboard" /></Link></li>*/}
               <select id="genre-select" value={selectedGenre} onChange={handleGenreChange}>
                 {Object.keys(cardGenres).map((option) => (
                   <option key={option} value={option}>
                     {option}
                   </option>
                 ))}
-              </select>
+              </select><FontAwesomeIcon icon="key" />
             </ul>
           </div>
           <Routes>
@@ -58,7 +58,7 @@ function App() {
             <Route path="/missing" element={<MissingGame genre={selectedGenre} />} />
             <Route path="/whichpic" element={<WhichPic genre={selectedGenre} />} />
             <Route path="/typing" element={<Typing genre={selectedGenre} />} />
-            <Route path="/bingo" element={<Bingo genre={selectedGenre} />} />
+            {/*<Route path="/bingo" element={<Bingo genre={selectedGenre} />} />*/}
             <Route path="*" element={<Flashcards genre={selectedGenre} currentIndex={currentIndex} />} />
           </Routes>
         </>

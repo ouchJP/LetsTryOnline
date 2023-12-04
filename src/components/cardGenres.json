@@ -283,6 +283,14 @@
       { "id": 16, "name": "spider", "imgUrl": "halloween/spider.jpg"    }
     ],
     "Christmas": [
-      { "id": 1, "name": "santa", "imgUrl": "christmas/santa.jpg"     }
+      { "id": 1, "name": "santa", "imgUrl": "christmas/santa.jpg"     },
+      { "id": 2, "name": "snowman", "imgUrl": "christmas/snowman.jpg"     },
+      { "id": 3, "name": "reindeer", "imgUrl": "christmas/reindeer.jpg"     },
+      { "id": 4, "name": "presents", "imgUrl": "christmas/presents.jpg"     },
+      { "id": 5, "name": "christmastree", "imgUrl": "christmas/christmastree.jpg"     },
+      { "id": 6, "name": "sleigh", "imgUrl": "christmas/sleigh.jpg"     },
+      { "id": 7, "name": "elf", "imgUrl": "christmas/elf.jpg"     },
+      { "id": 8, "name": "stocking", "imgUrl": "christmas/stocking.jpg"     },
+      { "id": 9, "name": "angel", "imgUrl": "christmas/angel.jpg"     }
     ]
   }
