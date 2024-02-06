@@ -99,3 +99,10 @@ ul {
   height: 500px;
   border-radius: 0.5rem;
 }
+
+.RandomInput {
+  border-radius: 0.5rem;
+  width: 5rem;
+  text-align: center;
+  font-family: "Comic Sans MS";
+}

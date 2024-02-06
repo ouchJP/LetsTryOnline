@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import CardGenres from './cardGenres.json';
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
@@ -6,22 +6,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './App.css';
 library.add(faPlay);
 
-
-
 function Flashcards({ genre }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isGenreChanging, setIsGenreChanging] = useState(false); // new state variable
+  const [isGenreChanging, setIsGenreChanging] = useState(false);
   const [previousIndex, setPreviousIndex] = useState(null);
-
+  const [textSize, setTextSize] = useState(24); // Initial text size
 
   useEffect(() => {
-    setIsGenreChanging(true); // indicate that genre change is in progress
-    setCurrentIndex(0); // reset index when genre changes
+    setIsGenreChanging(true);
+    setCurrentIndex(0);
   }, [genre]);
 
   useEffect(() => {
     if (isGenreChanging) {
-      setIsGenreChanging(false); // indicate that genre change is complete
+      setIsGenreChanging(false);
     }
   }, [isGenreChanging]);
 
@@ -32,7 +30,7 @@ function Flashcards({ genre }) {
   const handleRandomClick = () => {
     let randomIndex;
     do {
-      randomIndex =  Math.floor(Math.random() * CardGenres[genre].length);
+      randomIndex = Math.floor(Math.random() * CardGenres[genre].length);
     } while (randomIndex === previousIndex);
 
     setCurrentIndex(randomIndex);
@@ -45,7 +43,15 @@ function Flashcards({ genre }) {
     );
   };
 
-  const currentCard = isGenreChanging ? null : CardGenres[genre][currentIndex]; // handle null currentCard during genre change
+  const handleIncreaseTextSize = () => {
+    setTextSize((size) => size + 2);
+  };
+
+  const handleDecreaseTextSize = () => {
+    setTextSize((size) => Math.max(8, size - 2)); // Ensure minimum size is 8
+  };
+
+  const currentCard = isGenreChanging ? null : CardGenres[genre][currentIndex];
 
   return (
     <div>
@@ -55,9 +61,18 @@ function Flashcards({ genre }) {
         <button onClick={handlePrevClick}>Prev</button>
         <button onClick={handleRandomClick}>Random</button>
         <button onClick={handleNextClick}>Next</button>
+        <button onClick={handleDecreaseTextSize}>-</button>
+        <button onClick={handleIncreaseTextSize}>+</button>
         {currentCard && (
           <>
-            <h2>{currentCard.name}<audio id="player"></audio><button onclick="document.getElementById('player').play()"><FontAwesomeIcon icon="play" /></button></h2>
+            <h2 style={{ fontSize: `${textSize}px` }}>
+
+              {currentCard.name}
+              <audio id="player"></audio>
+              <button onClick={() => document.getElementById('player').play()}>
+                <FontAwesomeIcon icon="play" />
+              </button>
+            </h2>
             <img className="flashcard" src={currentCard.imgUrl} alt={currentCard.name} />
           </>
         )}

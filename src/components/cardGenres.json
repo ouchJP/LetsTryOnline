@@ -292,5 +292,60 @@
       { "id": 7, "name": "elf", "imgUrl": "christmas/elf.jpg"     },
       { "id": 8, "name": "stocking", "imgUrl": "christmas/stocking.jpg"     },
       { "id": 9, "name": "angel", "imgUrl": "christmas/angel.jpg"     }
+    ],
+    "フォニックス Aa": [
+      { "id": 1, "name": "apple", "imgUrl": "phonics/a/apple.jpg"     },
+      { "id": 2, "name": "ant", "imgUrl": "phonics/a/ant.jpg"     },
+      { "id": 3, "name": "alligator", "imgUrl": "phonics/a/alligator.jpg"     },
+      { "id": 4, "name": "axe", "imgUrl": "phonics/a/axe.jpg"     },
+      { "id": 5, "name": "angry", "imgUrl": "phonics/a/angry.jpg"     },
+      { "id": 6, "name": "animal", "imgUrl": "phonics/a/animal.jpg"     },
+      { "id": 7, "name": "america", "imgUrl": "phonics/a/america.jpg"     },
+      { "id": 8, "name": "africa", "imgUrl": "phonics/a/africa.jpg"     },
+      { "id": 9, "name": "alpaca", "imgUrl": "phonics/a/alpaca.jpg"     }
+    ],
+    "フォニックス Bb": [
+      { "id": 1, "name": "ball", "imgUrl": "phonics/b/ball.jpg"     },
+      { "id": 2, "name": "banana", "imgUrl": "phonics/b/banana.jpg"     },
+      { "id": 3, "name": "bag", "imgUrl": "phonics/b/bag.jpg"     },
+      { "id": 4, "name": "bed", "imgUrl": "phonics/b/bed.jpg"     },
+      { "id": 5, "name": "black", "imgUrl": "phonics/b/black.jpg"     },
+      { "id": 6, "name": "balloon", "imgUrl": "phonics/b/balloon.jpg"     },
+      { "id": 7, "name": "bear", "imgUrl": "phonics/b/bear.jpg"     },
+      { "id": 8, "name": "bird", "imgUrl": "phonics/b/bird.jpg"     },
+      { "id": 9, "name": "buffalo", "imgUrl": "phonics/b/buffalo.jpg"     }
+    ],
+    "フォニックス Cc": [
+      { "id": 1, "name": "cat", "imgUrl": "phonics/c/cat.jpg"     },
+      { "id": 2, "name": "car", "imgUrl": "phonics/c/car.jpg"     },
+      { "id": 3, "name": "cow", "imgUrl": "phonics/c/cow.jpg"     },
+      { "id": 4, "name": "cup", "imgUrl": "phonics/c/cup.jpg"     },
+      { "id": 5, "name": "cap", "imgUrl": "phonics/c/cap.jpg"     },
+      { "id": 6, "name": "candy", "imgUrl": "phonics/c/candy.jpg"     },
+      { "id": 7, "name": "carrot", "imgUrl": "phonics/c/carrot.jpg"     },
+      { "id": 8, "name": "cabbage", "imgUrl": "phonics/c/cabbage.jpg"     },
+      { "id": 9, "name": "cloudy", "imgUrl": "phonics/c/cloudy.jpg"     }
+    ],
+    "フォニックス Dd": [
+      { "id": 1, "name": "dog", "imgUrl": "phonics/d/dog.jpg"     },
+      { "id": 2, "name": "donut", "imgUrl": "phonics/d/donut.jpg"     },
+      { "id": 3, "name": "dragon", "imgUrl": "phonics/d/dragon.jpg"     },
+      { "id": 4, "name": "dragonfly", "imgUrl": "phonics/d/dragonfly.jpg"     },
+      { "id": 5, "name": "dance", "imgUrl": "phonics/d/dance.jpg"     },
+      { "id": 6, "name": "door", "imgUrl": "phonics/d/door.jpg"     },
+      { "id": 7, "name": "dish", "imgUrl": "phonics/d/dish.jpg"     },
+      { "id": 8, "name": "dice", "imgUrl": "phonics/d/dice.jpg"     },
+      { "id": 9, "name": "desk", "imgUrl": "phonics/d/desk.jpg"     }
+    ],
+    "フォニックス Ee": [
+      { "id": 1, "name": "egg", "imgUrl": "phonics/e/egg.jpg"     },
+      { "id": 2, "name": "elf", "imgUrl": "phonics/e/elf.jpg"     },
+      { "id": 3, "name": "elbow", "imgUrl": "phonics/e/elbow.jpg"     },
+      { "id": 4, "name": "elephant", "imgUrl": "phonics/e/elephant.jpg"     },
+      { "id": 5, "name": "elevator", "imgUrl": "phonics/e/elevator.jpg"     },
+      { "id": 6, "name": "eleven", "imgUrl": "phonics/e/eleven.jpg"     },
+      { "id": 7, "name": "envelope", "imgUrl": "phonics/e/envelope.jpg"     },
+      { "id": 8, "name": "eggplant", "imgUrl": "phonics/e/eggplant.jpg"     },
+      { "id": 9, "name": "empty", "imgUrl": "phonics/e/empty.jpg"     }
     ]
   }

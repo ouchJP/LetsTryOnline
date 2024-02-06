@@ -5,14 +5,16 @@ import MissingGame from './MissingGame';
 import Flashcards from './Flashcards';
 import WhichPic from './WhichPic';
 import Typing from './Typing';
+import Login from './Login';
+import Random from './Random';
 //import Bingo from './Bingo';
 import cardGenres from './cardGenres.json';
 import { BrowserRouter, Link, Route, Routes} from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faScroll, faBolt, faEye, faBrain, faBomb, faKeyboard, faGem, faKey } from "@fortawesome/free-solid-svg-icons";
+import { faScroll, faBolt, faEye, faBrain, faBomb, faKeyboard, faGem, faKey, faDice } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-library.add(faBrain, faScroll, faBomb, faBolt, faEye, faKeyboard, faGem, faKey);
+library.add(faBrain, faScroll, faBomb, faBolt, faEye, faKeyboard, faGem, faKey, faDice);
 
 function App() {
   const [selectedGenre, setSelectedGenre] = useState(() => {
@@ -49,7 +51,9 @@ function App() {
                     {option}
                   </option>
                 ))}
-              </select><FontAwesomeIcon icon="key" />
+              </select>
+              <li><Link to="/random">Random <FontAwesomeIcon icon="dice" /></Link></li>
+              <li><Link to="/login"><FontAwesomeIcon icon="key" /></Link></li>
             </ul>
           </div>
           <Routes>
@@ -58,6 +62,8 @@ function App() {
             <Route path="/missing" element={<MissingGame genre={selectedGenre} />} />
             <Route path="/whichpic" element={<WhichPic genre={selectedGenre} />} />
             <Route path="/typing" element={<Typing genre={selectedGenre} />} />
+            <Route path="/random" element={<Random genre={selectedGenre} />} />
+            <Route path="/login" element={<Login genre={selectedGenre} />} />
             {/*<Route path="/bingo" element={<Bingo genre={selectedGenre} />} />*/}
             <Route path="*" element={<Flashcards genre={selectedGenre} currentIndex={currentIndex} />} />
           </Routes>
