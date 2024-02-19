@@ -1,0 +1,6 @@
+-add all pdfs
+-streamline files+cards json
+-add all phonics
+-add all phonics images
+-add all cards audio
+-add something to auto-generate flashcards in a pdf for printing

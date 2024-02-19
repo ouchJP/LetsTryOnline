@@ -1,0 +1,8 @@
+.noPurple{
+ text-decoration: none;
+ color: blue
+}
+
+.noPurple:hover{
+    color: white
+}

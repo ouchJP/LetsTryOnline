@@ -15,7 +15,8 @@
       { "id": 6, "name": "monkey", "imgUrl": "animals/monkey.jpg"    } ,
       { "id": 7, "name": "bird", "imgUrl": "animals/bird.jpg"    } ,
       { "id": 8, "name": "snake", "imgUrl": "animals/snake.jpg"    } ,
-      { "id": 9, "name": "cow", "imgUrl": "animals/cow.jpg"      }
+      { "id": 9, "name": "cow", "imgUrl": "animals/cow.jpg"      },
+      { "id": "files", "small cards": "animals/animalsmallcards.pdf"}
     ],
     "insects": [
       { "id": 1, "name": "caterpillar", "imgUrl": "insects/caterpillar.jpg"    } ,
@@ -26,7 +27,8 @@
       { "id": 6, "name": "mantis", "imgUrl": "insects/mantis.jpg"    } ,
       { "id": 7, "name": "ladybug", "imgUrl": "insects/ladybug.jpg"    } ,
       { "id": 8, "name": "dragonfly", "imgUrl": "insects/dragonfly.jpg"    } ,
-      { "id": 9, "name": "ant", "imgUrl": "insects/ant.jpg"      }
+      { "id": 9, "name": "ant", "imgUrl": "insects/ant.jpg"      },
+      { "id": "files", "small cards": "insects/insects.pdf"}
     ],
     "sea": [
       { "id": 1, "name": "fish", "imgUrl": "sea/fish.jpg"    } ,
@@ -280,7 +282,8 @@
       { "id": 13, "name": "mummy", "imgUrl": "halloween/mummy.jpg"    },
       { "id": 14, "name": "trick or treat", "imgUrl": "halloween/trickortreat.jpg"    },
       { "id": 15, "name": "owl", "imgUrl": "halloween/owl.jpg"    },
-      { "id": 16, "name": "spider", "imgUrl": "halloween/spider.jpg"    }
+      { "id": 16, "name": "spider", "imgUrl": "halloween/spider.jpg"    },
+      { "id": "files", "small cards" : "halloween/halloween.pdf"}
     ],
     "Christmas": [
       { "id": 1, "name": "santa", "imgUrl": "christmas/santa.jpg"     },
@@ -291,7 +294,8 @@
       { "id": 6, "name": "sleigh", "imgUrl": "christmas/sleigh.jpg"     },
       { "id": 7, "name": "elf", "imgUrl": "christmas/elf.jpg"     },
       { "id": 8, "name": "stocking", "imgUrl": "christmas/stocking.jpg"     },
-      { "id": 9, "name": "angel", "imgUrl": "christmas/angel.jpg"     }
+      { "id": 9, "name": "angel", "imgUrl": "christmas/angel.jpg"     },
+      { "id": "files", "small cards": "christmas/christmassmallcards9.pdf"}
     ],
     "Subjects": [
       { "id": 1, "name": "music", "imgUrl": "subjects/music.jpg"     },
@@ -302,7 +306,8 @@
       { "id": 6, "name": "arts and crafts", "imgUrl": "subjects/artsandcrafts.jpg"     },
       { "id": 7, "name": "science", "imgUrl": "subjects/science.jpg"     },
       { "id": 8, "name": "sociall studies", "imgUrl": "subjects/socialstudies.jpg"     },
-      { "id": 9, "name": "moral education", "imgUrl": "subjects/moraleducation.jpg"     }
+      { "id": 9, "name": "moral education", "imgUrl": "subjects/moraleducation.jpg"     },
+      { "id": "files", "small cards": "subjects/smallcards.pdf"}
     ],
     "フォニックス Aa": [
       { "id": 1, "name": "apple", "imgUrl": "phonics/a/apple.jpg"     },
