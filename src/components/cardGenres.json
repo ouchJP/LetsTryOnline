@@ -301,8 +301,22 @@
       { "id": 5, "name": "English", "imgUrl": "subjects/English.jpg"     },
       { "id": 6, "name": "arts and crafts", "imgUrl": "subjects/artsandcrafts.jpg"     },
       { "id": 7, "name": "science", "imgUrl": "subjects/science.jpg"     },
-      { "id": 8, "name": "sociall studies", "imgUrl": "subjects/socialstudies.jpg"     },
+      { "id": 8, "name": "social studies", "imgUrl": "subjects/socialstudies.jpg"     },
       { "id": 9, "name": "moral education", "imgUrl": "subjects/moraleducation.jpg"     }
+    ],
+    "Months": [
+      { "id": 1, "name": "January", "imgUrl": "months/january.jpg"     },
+      { "id": 2, "name": "February", "imgUrl": "months/february.jpg"     },
+      { "id": 3, "name": "March", "imgUrl": "months/march.jpg"     },
+      { "id": 4, "name": "April", "imgUrl": "months/april.jpg"     },
+      { "id": 5, "name": "May", "imgUrl": "months/may.jpg"     },
+      { "id": 6, "name": "June", "imgUrl": "months/june.jpg"     },
+      { "id": 7, "name": "July", "imgUrl": "months/july.jpg"     },
+      { "id": 8, "name": "August", "imgUrl": "months/august.jpg"     },
+      { "id": 9, "name": "September", "imgUrl": "months/september.jpg"     },
+      { "id": 10, "name": "October", "imgUrl": "months/october.jpg"     },
+      { "id": 11, "name": "November", "imgUrl": "months/november.jpg"     },
+      { "id": 12, "name": "December", "imgUrl": "months/december.jpg"     }
     ],
     "フォニックス Aa": [
       { "id": 1, "name": "apple", "imgUrl": "phonics/a/apple.jpg"     },
