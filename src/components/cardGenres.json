@@ -2,7 +2,7 @@
     "fruits": [
       { "id": 1, "name": "apple", "imgUrl": "fruits/apple.jpg", "sound": "fruits.apple.wav"      } ,
       { "id": 2, "name": "banana", "imgUrl": "fruits/banana.png"    } ,
-      { "id": 3, "name": "melon", "imgUrl": "fruits/orange.jpg"    } ,
+      { "id": 3, "name": "melon", "imgUrl": "fruits/melon.jpg"    } ,
       { "id": 4, "name": "peach", "imgUrl": "fruits/peach.jpg"    } ,
       { "id": 5, "name": "grapes", "imgUrl": "fruits/grapes.jpg"      },
       { "id": 6, "name": "cherry", "imgUrl": "fruits/cherry.jpg"    } ,
