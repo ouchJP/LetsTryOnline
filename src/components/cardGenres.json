@@ -5,7 +5,7 @@
       { "id": 3, "name": "melon", "imgUrl": "fruits/orange.jpg"    } ,
       { "id": 4, "name": "peach", "imgUrl": "fruits/peach.jpg"    } ,
       { "id": 5, "name": "grapes", "imgUrl": "fruits/grapes.jpg"      },
-      { "id": 6, "name": "cherry", "imgUrl": "fruits/cherry.png"    } ,
+      { "id": 6, "name": "cherry", "imgUrl": "fruits/cherry.jpg"    } ,
       { "id": 7, "name": "kiwifruit", "imgUrl": "fruits/kiwifruit.jpg"    } ,
       { "id": 8, "name": "lemon", "imgUrl": "fruits/lemon.jpg"      }
     ],
