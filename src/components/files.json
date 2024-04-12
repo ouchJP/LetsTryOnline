@@ -4,7 +4,8 @@
       { "id": 2, "name": "banana", "imgUrl": "fruits/banana.png"    } ,
       { "id": 3, "name": "orange", "imgUrl": "fruits/orange.png"    } ,
       { "id": 4, "name": "peach", "imgUrl": "fruits/peach.jpg"    } ,
-      { "id": 5, "name": "grapes", "imgUrl": "fruits/grapes.jpg"      }
+      { "id": 5, "name": "grapes", "imgUrl": "fruits/grapes.jpg"      },
+      { "id": "files", "small cards": "fruits/smallcards.pdf"}
     ],
     "animals": [
       { "id": 1, "name": "cat", "imgUrl": "animals/cat.jpg"    } ,
