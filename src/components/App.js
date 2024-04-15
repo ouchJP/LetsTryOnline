@@ -5,16 +5,17 @@ import MissingGame from './MissingGame';
 import Flashcards from './Flashcards';
 import WhichPic from './WhichPic';
 import Typing from './Typing';
-import Login from './Login';
+import Files from './Files';
 import Random from './Random';
+import VideoPlayer from './VideoPlayer';
 //import Bingo from './Bingo';
 import cardGenres from './cardGenres.json';
 import { BrowserRouter, Link, Route, Routes} from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faScroll, faBolt, faEye, faBrain, faBomb, faKeyboard, faGem, faKey, faDice } from "@fortawesome/free-solid-svg-icons";
+import { faScroll, faBolt, faEye, faBrain, faBomb, faKeyboard, faGem, faKey, faDice, faVideo } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-library.add(faBrain, faScroll, faBomb, faBolt, faEye, faKeyboard, faGem, faKey, faDice);
+library.add(faBrain, faScroll, faBomb, faBolt, faEye, faKeyboard, faGem, faKey, faDice, faVideo);
 
 function App() {
   const [selectedGenre, setSelectedGenre] = useState(() => {
@@ -40,11 +41,11 @@ function App() {
           <div className='links'>
             <ul>
               <li><Link to="/flashcards">Flashcards <FontAwesomeIcon icon="bolt" /></Link></li>
-              <li><Link to="/concentration">Concentration <FontAwesomeIcon icon="bomb" /></Link></li>
+              {/*<li><Link to="/concentration">Concentration <FontAwesomeIcon icon="bomb" /></Link></li>*/}
               <li><Link to="/missing">Missing <FontAwesomeIcon icon="eye" /></Link></li>
               <li><Link to="/whichpic">Which Pic? <FontAwesomeIcon icon="gem" /></Link></li>
               <li><Link to="/typing">Typing <FontAwesomeIcon icon="keyboard" /></Link></li>
-              {/*<li><Link to="/bingo">Bingo <FontAwesomeIcon icon="keyboard" /></Link></li>*/}
+              <li><Link to="/videos">Video <FontAwesomeIcon icon="video" /></Link></li>
               <select id="genre-select" value={selectedGenre} onChange={handleGenreChange}>
                 {Object.keys(cardGenres).map((option) => (
                   <option key={option} value={option}>
@@ -53,7 +54,7 @@ function App() {
                 ))}
               </select>
               <li><Link to="/random">Random <FontAwesomeIcon icon="dice" /></Link></li>
-              <li><Link to="/login"><FontAwesomeIcon icon="key" /></Link></li>
+              <li><Link to="/files"><FontAwesomeIcon icon="key" /></Link></li>
             </ul>
           </div>
           <Routes>
@@ -63,8 +64,8 @@ function App() {
             <Route path="/whichpic" element={<WhichPic genre={selectedGenre} />} />
             <Route path="/typing" element={<Typing genre={selectedGenre} />} />
             <Route path="/random" element={<Random genre={selectedGenre} />} />
-            <Route path="/login" element={<Login genre={selectedGenre} />} />
-            {/*<Route path="/bingo" element={<Bingo genre={selectedGenre} />} />*/}
+            <Route path="/files" element={<Files genre={selectedGenre} />} />
+            <Route path="/videos" element={<VideoPlayer genre={selectedGenre} />} />
             <Route path="*" element={<Flashcards genre={selectedGenre} currentIndex={currentIndex} />} />
           </Routes>
         </>

@@ -368,5 +368,14 @@
       { "id": 7, "name": "envelope", "imgUrl": "phonics/e/envelope.jpg"     },
       { "id": 8, "name": "eggplant", "imgUrl": "phonics/e/eggplant.jpg"     },
       { "id": 9, "name": "empty", "imgUrl": "phonics/e/empty.jpg"     }
+    ],
+    "videos": [
+      { "id": 1, "name": "Hello Song", "imgUrl": "videos/hello.mp4"  },
+      { "id": 2, "name": "5 little monkeys", "imgUrl": "videos/monkeys.mp4"  },
+      { "id": 3, "name": "If you're happy and you know it", "imgUrl": "videos/happy.mp4"  },
+      { "id": 4, "name": "BINGO", "imgUrl": "videos/bingo.mp4"  },
+      { "id": 5, "name": "Head, Shoulders, Knees, Toes", "imgUrl": "videos/hskt.mp4"  },
+      { "id": 6, "name": "Walking, Walking", "imgUrl": "videos/walking.mp4"  },
+      { "id": 7, "name": "Goodbye Song", "imgUrl": "videos/goodbye.mp4"  }
     ]
   }
