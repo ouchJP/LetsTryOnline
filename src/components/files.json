@@ -2,9 +2,13 @@
     "fruits": [
       { "id": 1, "name": "apple", "imgUrl": "fruits/apple.jpg", "sound": "fruits.apple.wav"      } ,
       { "id": 2, "name": "banana", "imgUrl": "fruits/banana.png"    } ,
-      { "id": 3, "name": "orange", "imgUrl": "fruits/orange.png"    } ,
+      { "id": 3, "name": "melon", "imgUrl": "fruits/melon.jpg"    } ,
       { "id": 4, "name": "peach", "imgUrl": "fruits/peach.jpg"    } ,
       { "id": 5, "name": "grapes", "imgUrl": "fruits/grapes.jpg"      },
+      { "id": 6, "name": "cherry", "imgUrl": "fruits/cherry.jpg"    } ,
+      { "id": 7, "name": "kiwifruit", "imgUrl": "fruits/kiwifruit.jpg"    } ,
+      { "id": 8, "name": "lemon", "imgUrl": "fruits/lemon.jpg"      },
+      { "id": 9, "name": "strawberry", "imgUrl": "fruits/strawberry.jpg"      },
       { "id": "files", "small cards": "fruits/smallcards.pdf"}
     ],
     "animals": [
@@ -318,7 +322,7 @@
       { "id": 5, "name": "angry", "imgUrl": "phonics/a/angry.jpg"     },
       { "id": 6, "name": "animal", "imgUrl": "phonics/a/animal.jpg"     },
       { "id": 7, "name": "america", "imgUrl": "phonics/a/america.jpg"     },
-      { "id": 8, "name": "africa", "imgUrl": "phonics/a/africa.jpg"     },
+      { "id": 8, "name": "astronaut", "imgUrl": "phonics/a/astronaut.jpg"     },
       { "id": 9, "name": "alpaca", "imgUrl": "phonics/a/alpaca.jpg"     }
     ],
     "フォニックス Bb": [
