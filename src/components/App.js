@@ -8,12 +8,14 @@ import Typing from './Typing';
 import Files from './Files';
 import Random from './Random';
 import VideoPlayer from './VideoPlayer';
+import MyButtonComponent from './MyButtonComponent';
 //import Bingo from './Bingo';
 import cardGenres from './cardGenres.json';
 import { BrowserRouter, Link, Route, Routes} from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faScroll, faBolt, faEye, faBrain, faBomb, faKeyboard, faGem, faKey, faDice, faVideo } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 library.add(faBrain, faScroll, faBomb, faBolt, faEye, faKeyboard, faGem, faKey, faDice, faVideo);
 
@@ -33,6 +35,8 @@ function App() {
   const handleGenreChange = (event) => {
     setSelectedGenre(event.target.value);
   };
+
+  
 
   return (
     <div className="wrapper">
@@ -65,6 +69,7 @@ function App() {
             <Route path="/typing" element={<Typing genre={selectedGenre} />} />
             <Route path="/random" element={<Random genre={selectedGenre} />} />
             <Route path="/files" element={<Files genre={selectedGenre} />} />
+            <Route path="/pdf" element={<MyButtonComponent genre={selectedGenre} />} />
             <Route path="/videos" element={<VideoPlayer genre={selectedGenre} />} />
             <Route path="*" element={<Flashcards genre={selectedGenre} currentIndex={currentIndex} />} />
           </Routes>
