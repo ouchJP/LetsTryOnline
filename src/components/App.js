@@ -8,7 +8,7 @@ import Typing from './Typing';
 import Files from './Files';
 import Random from './Random';
 import VideoPlayer from './VideoPlayer';
-import MyButtonComponent from './MyButtonComponent';
+import PdfViewer from './PdfViewer';
 //import Bingo from './Bingo';
 import cardGenres from './cardGenres.json';
 import { BrowserRouter, Link, Route, Routes} from "react-router-dom";
@@ -69,7 +69,7 @@ function App() {
             <Route path="/typing" element={<Typing genre={selectedGenre} />} />
             <Route path="/random" element={<Random genre={selectedGenre} />} />
             <Route path="/files" element={<Files genre={selectedGenre} />} />
-            <Route path="/pdf" element={<MyButtonComponent genre={selectedGenre} />} />
+            <Route path="/pdf" element={<PdfViewer genre={selectedGenre} />} />
             <Route path="/videos" element={<VideoPlayer genre={selectedGenre} />} />
             <Route path="*" element={<Flashcards genre={selectedGenre} currentIndex={currentIndex} />} />
           </Routes>

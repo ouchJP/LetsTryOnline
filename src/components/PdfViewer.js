@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const MyButtonComponent = ({genre}) => {
+const PdfViewer = ({genre}) => {
   const renderImages = () => {
     if (!genre) return null;
 
@@ -77,4 +77,4 @@ const MyButtonComponent = ({genre}) => {
   );
 };
 
-export default MyButtonComponent;
+export default PdfViewer;
