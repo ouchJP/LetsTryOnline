@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: "Comic Sans MS", "Comic Sans"
+  font-family: "Comic Sans MS", "Comic Sans";
 }
 
 :root {
@@ -41,11 +41,20 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 1.25rem;
+  transition: transform 0.3s, box-shadow 0.3s, color 0.3s;
 }
 
-.links a:hover {
-  color: var(--color-);
+.links a:hover,
+.links a:active,
+.links a:focus {
+  color: var(--color-tertiary);
+  transform: scale(1.1);
   cursor: pointer;
+  font-size: 1.25 rem;
+}
+
+.links a:hover{
+  color: var(--color-secondary);
 }
 
 ul {
@@ -55,8 +64,22 @@ ul {
 
 .pageHead {
   position: relative;
-
   height: 5%;
+}
+
+#genre-select {
+  padding: 10px;
+  margin-left: 10px;
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#genre-select:hover,
+#genre-select:focus {
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .gameBody {
