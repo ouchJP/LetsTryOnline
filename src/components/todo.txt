@@ -3,4 +3,3 @@
 -add all phonics
 -add all phonics images
 -add all cards audio
--add something to auto-generate flashcards in a pdf for printing

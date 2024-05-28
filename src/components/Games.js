@@ -1,7 +1,7 @@
 import './App.css';
 import './games.css';
 
-import React, {  useState } from 'react';
+import React, { useState } from 'react';
 import MissingGame from './MissingGame';
 import WhichPic from './WhichPic';
 import Typing from './Typing';
@@ -25,21 +25,26 @@ function Games({genre}) {
         }
       };
 
-    return (
-        <div className="container">
-        <div className="buttons">
+  return (
+    <div className="container">
+      <div className='links'>
+        <ul>
           {gamesList.map((game) => (
-            <button key={game} onClick={() => setSelectedGame(game)}>
+            <li
+              className={`li-copy ${selectedGame === game ? 'selected' : ''}`}
+              key={game}
+              onClick={() => setSelectedGame(game)}
+            >
               {game}
-            </button>
+            </li>
           ))}
-        </div>
-        <div className="game-component">
-          {renderGameComponent(genre)}
-        </div>
+        </ul>
       </div>
-    );
+      <div className="game-component">
+        {renderGameComponent()}
+      </div>
+    </div>
+  );
 };
-
 
 export default Games;
