@@ -359,10 +359,10 @@
       { "id": 1, "name": "dog", "imgUrl": "phonics/d/dog.jpg"     },
       { "id": 2, "name": "donut", "imgUrl": "phonics/d/donut.jpg"     },
       { "id": 3, "name": "dragon", "imgUrl": "phonics/d/dragon.jpg"     },
-      { "id": 4, "name": "dragonfly", "imgUrl": "phonics/d/dragonfly.jpg"     },
+      { "id": 4, "name": "drum", "imgUrl": "phonics/d/drum.jpg"     },
       { "id": 5, "name": "dance", "imgUrl": "phonics/d/dance.jpg"     },
-      { "id": 6, "name": "door", "imgUrl": "phonics/d/door.jpg"     },
-      { "id": 7, "name": "dish", "imgUrl": "phonics/d/dish.jpg"     },
+      { "id": 6, "name": "duck", "imgUrl": "phonics/d/duck.jpg"     },
+      { "id": 7, "name": "dinosaur", "imgUrl": "phonics/d/dinosaur.jpg"     },
       { "id": 8, "name": "dice", "imgUrl": "phonics/d/dice.jpg"     },
       { "id": 9, "name": "desk", "imgUrl": "phonics/d/desk.jpg"     }
     ],
