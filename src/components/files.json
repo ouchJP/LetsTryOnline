@@ -376,6 +376,7 @@
       { "id": 4, "name": "BINGO", "imgUrl": "videos/bingo.mp4"  },
       { "id": 5, "name": "Head, Shoulders, Knees, Toes", "imgUrl": "videos/hskt.mp4"  },
       { "id": 6, "name": "Walking, Walking", "imgUrl": "videos/walking.mp4"  },
-      { "id": 7, "name": "Goodbye Song", "imgUrl": "videos/goodbye.mp4"  }
+      { "id": 7, "name": "Goodbye Song", "imgUrl": "videos/goodbye.mp4"  },
+      { "id": 8, "name": "Do you like...?", "imgUrl": "videos/broccoli.mp4"  }
     ]
   }
