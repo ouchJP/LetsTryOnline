@@ -376,5 +376,16 @@
       { "id": 7, "name": "envelope", "imgUrl": "phonics/e/envelope.jpg"     },
       { "id": 8, "name": "eggplant", "imgUrl": "phonics/e/eggplant.jpg"     },
       { "id": 9, "name": "empty", "imgUrl": "phonics/e/empty.jpg"     }
+    ],
+    "フォニックス Ff": [
+      { "id": 1, "name": "fish", "imgUrl": "phonics/f/fish.jpg"     },
+      { "id": 2, "name": "frog", "imgUrl": "phonics/f/frog.jpg"     },
+      { "id": 3, "name": "four", "imgUrl": "33/4.jpg"     },
+      { "id": 4, "name": "fox", "imgUrl": "phonics/f/fox.jpg"     },
+      { "id": 5, "name": "fork", "imgUrl": "phonics/f/fork.jpg"     },
+      { "id": 6, "name": "feet", "imgUrl": "phonics/f/feet.jpg"     },
+      { "id": 7, "name": "face", "imgUrl": "phonics/f/face.jpg"     },
+      { "id": 8, "name": "fan", "imgUrl": "phonics/f/fan.jpg"     },
+      { "id": 9, "name": "flower", "imgUrl": "phonics/f/flower.jpg"     }
     ]
   }
